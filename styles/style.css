@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "Archivo Black";
+    src: url(../fonts/fonts/ArchivoBlack-Regular.woff) format(woff),
+         url(../fonts/fonts/ArchivoBlack-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/fonts/OpenSans-Regular.woff) format(woff),
+        url(../fonts/fonts/OpenSans-Regular.woff2) format(woff2);
+}  
+
+@font-face {
+    font-family: 'Open Sans Semi';
+    src: url(../fonts/fonts/OpenSans-SemiBold.woff) format(woff),
+        url(../fonts/fonts/OpenSans-SemiBold.woff2) format(woff2);
+} 
+
+body{
+    margin: 0;
+    background-color: #111111;
+
+    background: radial-gradient(
+        circle at 50% 90%,
+        #2a2a52 0%,
+        #111111 15%
+        );
+        
+    
+}
+header, main, footer{
+padding: 40px 8.33% 0 8.33%;
+}
+header{
+    background: radial-gradient(
+        circle at 75% 50%,
+        #2a2a52 0%,
+        #111111 30%
+    );
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.main-title, .second-title, .third-title{
+    font-family: 'Archivo Black';
+    color: #ffffff;
+    
+}
+
+.main-title{
+    font-size: 72px;
+}
+.profile-skills-text, .website-text, .website-links-urls, .project-link-url, .project-info-links{
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+.profile-skills-text{
+    opacity: 50%;
+}
+
+
+
+.profile-image{
+    width: 450px;
+    height: 450px;
+}
+
+.profile-link{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.website-links-urls, .project-link-url{
+    text-decoration: none;
+}
+
+.website-links-urls{
+    padding-bottom: 5px;
+    background: linear-gradient(90deg, #4C1A97, #6D6DFF);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+
+.skills{
+    margin: 110px 0 0 0;
+}
+
+.second-title{
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.skills-container{
+    display: grid;
+    gap:180px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+.skills-images{
+    width: 50px;
+    height: 57px;
+}
+
+.main{
+    margin: 110px 0 0 0;
+    overflow: visible;
+}
+
+.project-description{
+    background-color: #1c1c1c;
+    width: calc((100vw - (100vw * 0.083 * 2)) / 2);
+    height: auto;
+}
+
+.projects-shown{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.first-project, .second-project{
+    position: relative;
+}
+
+.projects-images{
+    width: 100%;
+    height: 330px;
+}
+
+.technologies-used{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 86%;
+    margin: 0 0 0 10px;
+}
+
+.project-technologies{
+    width: 40px;
+    height: 40px;
+}
+
+.project-info{
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.third-title{
+    font-size: 24px;
+}
+
+.project-links{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.project-link-url{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #6D6DFF;
+}
+
+.project-info-images{
+    width: 20px;
+    height: 20px;
+}
+
+.project-info-links{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px ;
+}
+
+.github-url{
+    color: #ffffff;
+}
+
+footer{
+    margin: 100px 0 0 0;
+    padding: 0;
+}
+
+.contact-information{
+    text-align: center;
+}
+
+.contact-title{
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.email-text{
+    color: #6D6DFF;
+    text-decoration: none;
+}
+
+.social-media{
+    margin: 30px auto 100px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.social-media-icon{
+    width: 28px;
+    height: 28px;
+}
+
+.website-links-urls:hover, .project-link-url:hover, .email-text:hover, .social-media-icon:hover{
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 769px) {
+    body{
+
+    background: radial-gradient(
+        circle at 50% 92%,
+        #2a2a52 0%,
+        #111111 15%
+        ); 
+}
+
+    header, main, footer{
+        padding: 0 5.2% 0 5.2%;
+    }
+header{
+    background: radial-gradient(
+        circle at 75% 30%,
+        #2a2a52 0%,
+        #111111 50%
+    );
+    background-size: cover;
+}
+    .main-title{
+        font-size: 58px;
+    }
+    .profile-image{
+        width: 216px;
+        height: 280px;
+    }
+    .skills-container{
+        gap: 78px   ;   
+    }
+    .skills-images{
+height: 50px;
+
+    }
+    .projects-shown{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+    .project-description{
+    background-color: #1c1c1c;
+    width: calc(100vw - (100vw * 0.052 * 2));
+    height: auto;
+}
+
+.project-info-2{
+    min-height: auto;
+}
+.project-links{
+    margin-top: 30px;
+}
+.spacer{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 481px){
+    
+    header{
+    background: radial-gradient(
+        circle at 50% 20%,
+        #2a2a52 0%,
+        #111111 50%
+    );
+    background-size: cover;
+}
+
+    .header{
+        flex-direction: column;
+    }
+
+    .image-container{
+        order: 1;
+        text-align: center;
+    }
+
+    .profile-image{
+        width: 280px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .profile-info{
+        order: 2;
+    }
+
+    .main-title{
+        font-size: 38px;
+    }
+
+    .profile-skills-text, .website-text, .website-links-urls, .project-link-url, .project-info-links{
+        font-size: 16px;
+    }
+
+    .second-title{
+        font-size: 28px;
+        color: #ffffff;
+    }
+
+    .project-info-2{
+    min-height: auto;
+}
+    .skills-images{
+        width: 30px;
+        height: 34px;
+    }
+    .spacer {
+    display:none;
+    }
+}
